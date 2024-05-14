@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Web Page</title>
+    <!-- Embeded CSS -->
+    <style>
+        header {
+            background: url("images/central_park.jpg") 0px -200px no-repeat; /* shortcut */
+            /* background-image: url("images/central_park.jpg"); */
+            background-size: 1500px;/* cannot shortcut */
+            /* background-position: 0px -200px; */
+            /* background-repeat: no-repeat; */
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
     <!--Container-->
@@ -14,17 +25,17 @@
         <!--Navigation-->
         <nav>
             <ul>
-                <li><a href="index.html"></a>Home</li>
-                <li><a href="page2.html"></a>About</li>
-                <li>Gallery</li>
-                <li><a href="page3.html"></a>Contact</li>    
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About</a> </li>
+                <li><a href="#">Gallery</a> </li>
+                <li><a href="page3.html">Contact</a> </li>    
             </ul>
         </nav>
         <!--Main Content-->
         <main>
             <h1>My First Heading</h1>
             <p>My first paragraph.</p>
-            <img src="images/central_park.jpg" alt="Central Park" width="500">
+           <!-- <img src="images/central_park.jpg" alt="Central Park" width="500"> ->-
         </main>
         <!-- Footer -->
         <footer>

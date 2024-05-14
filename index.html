@@ -13,13 +13,61 @@
             /* background-position: 0px -200px; */
             /* background-repeat: no-repeat; */
             height: 400px;
+            padding-top: 100px;
+            padding-left: 100px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li {
+            list-style-type: none;
+            display: inline;
+            padding: 0px 20px;
+        }
+        /* affect to only li a */
+        li a:link {
+            text-decoration: none;
+            color: #000;
+        }
+        li a:visited {
+            text-decoration: none;
+            color: #818db3;
+        }
+        li a:hover {
+            text-decoration: none;
+            color: #333;
+        }
+        li a:active {
+            text-decoration: none;
+            color: #753a30;
+        }
+        
+        nav {
+            background-color: rgb(255, 245, 238);
+            height: 50px;
+            text-align: center;
+            padding-top: 2px;
+        }
+        /* style the main content area */
+        main {
+            height: 400px;
+        }
+        main h1 {
+            color:rgb(129,141,179);
+            font-family: arial;
+        }
+        footer {
+            height: 40px;
+            background-color: rgb(129,141,179);
+            text-align: center;
+            padding-top: 20px;
+            color: rgb(211,218,240)
         }
     </style>
 </head>
 <body>
     <!--Container-->
     <div id="container">
-        <header>
+        <header style="font-size: 60px; color: #ffffff">
             My Website Brand
         </header>
         <!--Navigation-->
@@ -35,7 +83,7 @@
         <main>
             <h1>My First Heading</h1>
             <p>My first paragraph.</p>
-           <!-- <img src="images/central_park.jpg" alt="Central Park" width="500"> ->-
+           <!-- <img src="images/central_park.jpg" alt="Central Park" width="500"> -->
         </main>
         <!-- Footer -->
         <footer>

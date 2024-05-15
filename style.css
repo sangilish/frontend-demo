@@ -41,12 +41,58 @@ nav {
 }
 /* style the main content area */
 main {
-
+    margin: 50px;
 }
 main h1 {
     color:rgb(129,141,179);
     font-family: arial;
 }
+table {
+    margin-top: 35px;
+}
+table, caption, th, td {
+    border: 1px solid #000;
+}
+th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+}
+caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color:#753a30;
+}
+label {
+    display: block;
+    margin: 10px 0 0 0;
+}
+input, textarea {
+    width: 300px;
+}
+
+input[type="radio"] {
+    width:25px;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 20px 0 10px 0;
+    width: 100px;
+    background-color: #ea4022;
+    border: 0px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input:focus {
+    background-color: #c8eb47;
+}
+
 footer {
     height: 40px;
     background-color: rgb(129,141,179);

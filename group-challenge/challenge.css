@@ -45,6 +45,7 @@ main h2 {
 	font:normal bold 16px; 
 	margin:10px 0; 
 	color: #001a63;
+	font-size: large;
 }
 
 /* Global Navigation */
@@ -66,7 +67,9 @@ main h2 {
 }
 .globalNav ul a { 
 	font:normal bold 14px; 
-	text-decoration:none; 
+	text-decoration:none;
+	color: #fff;
+	margin-left: 10px;
 }
 .globalNav ul a:hover {
 	
@@ -83,27 +86,31 @@ footer p {
 	height: 40px;
 	text-align: center;
 	background-color: #babaff;
-	text-align: center;
 	padding-top: 20px;
 	font-weight: bold;
 	font-style: italic;
+	font-size: 15px;
 }
 .footerNav {
 	background:#babaff;
 	padding: 5px 0;
+	background-color: #00f;
+	text-align: center;
 }
 .footerNav li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-left:1px solid #fff;
-	background-color: #00f;
-	
 }
 .footerNav li:first-child {
 	border-left:none;
 }
 .footerNav a {
-	color:#fff; 
 	font:normal bold 14px; 
 	text-decoration:none;
+	color:#fff; 
+
 }
 .footerNav a:hover {
 

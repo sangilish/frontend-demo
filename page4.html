@@ -49,6 +49,16 @@
             </li>
             -->
         </ul>
+
+        <!-- Info Box -->
+        <div id="info-box" class="info-box">
+            <div id="info-heading"></div>
+            <div id="info-text"></div>
+            <div id="info-close">Click This To Close</div>
+        </div>
+
+
+
         </main>
         <!-- Footer -->
         <footer>
@@ -58,43 +68,7 @@
 
 
     <!-- Gallery Script -->    
-    <script>
-        var photos = [];
-        var fileNames = [];
-        var imageList = [];
-        var image;
-        var openList = '<li id="photo">';
-        var closeList = '</li>';
-        var openCaptionTag = "<div class='caption'>";
-        var closeCaptionTag = "</div>";
-        var openDescTag = "<div class='description'>";
-        var closeDescTag = "</div>";
-        
-        var captionTexts = [
-            "Caption 1", "Caption 2", "Caption 3", "Caption 4", "Caption 5", 
-            "Caption 6", "Caption 7", "Caption 8", "Caption 9", "Caption 10"
-        ];
-        
-        var descTexts = [
-            "Description 1", "Description 2", "Description 3", "Description 4", "Description 5", 
-            "Description 6", "Description 7", "Description 8", "Description 9", "Description 10"
-        ];
-
-        // Create a loop to create 10 images starting with an index of 0
-        for (var i = 0; i < 10; i++) {
-            fileNames.push("winterland" + (i + 1));  
-            photos.push("<img src='images/" + fileNames[i] + ".jpg'>");
-            var caption = openCaptionTag + captionTexts[i] + closeCaptionTag;
-            var description = openDescTag + descTexts[i] + closeDescTag;
-            image = openList + photos[i] + caption + description + closeList;
-            imageList.push(image);
-        }
-
-        // Display all ten image codes stored in the array
-        document.getElementById("album").innerHTML = imageList.join(""); // Use join to convert the array to a string
-    </script>
-
-
+    <script src="script.js"></script>
 
 </body>
 </html>

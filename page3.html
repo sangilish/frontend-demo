@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Third Web Page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Empty Tag-->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--Container-->
@@ -16,9 +16,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="page2.html">About</a> </li>
-                <li><a href="page4.html">Gallery</a> </li>
-                <li><a href="page3.html">Contact</a> </li>    
+                <li><a href="page2.html">About</a></li>
+                <li><a href="page4.html">Gallery</a></li>
+                <li><a href="page3.html">Contact</a></li>    
             </ul>
         </nav>
         <!--Main Content-->
@@ -31,27 +31,32 @@
             <form action="/signup" method="post">
                 <fieldset>
                     <legend>User Personal Information</legend>
-                    <label>Enter your full namen</label>
+                    <label>Enter your full name</label>
                     <input type="text" name="name">
-                    <label> Enter your email</label>
-                    <input type="email" name="email">
-                    <label> Enter your phone</label>
-                    <input type="text" name="phone">
 
                     <label>Select your gender</label>
                     <input type="radio" name="gender" value="male"/>Male
                     <input type="radio" name="gender" value="female"/>Female
                     
-                    
-                    <label> How should we contant you?</label>
-                    <select>
-                        <option>Email</option>
-                        <option>Phone</option>
+                    <label>How should we contact you?</label>
+                    <select id="contact-method">
+                        <option value="">Select One</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
                     </select>
 
+                    <div id="email-input" class="hidden">
+                        <label>Enter your email</label>
+                        <input type="email" name="email">
+                    </div>
+
+                    <div id="phone-input" class="hidden">
+                        <label>Enter your phone</label>
+                        <input type="text" name="phone">
+                    </div>
                     
-                    <label>Tell us the readon of your visit today:</label>
-                    <textarea row="5" cols="30"></textarea>
+                    <label>Tell us the reason for your visit today:</label>
+                    <textarea rows="5" cols="30"></textarea>
                     <input type="submit" value="sign-up">
                 </fieldset>
             </form>
@@ -61,5 +66,7 @@
             &copy; Copyright 2024
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

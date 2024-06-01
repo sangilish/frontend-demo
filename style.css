@@ -1,9 +1,7 @@
+/* Existing CSS */
 header {
-    background: url("images/central_park.jpg") 0px -200px no-repeat; /* shortcut */
-    /* background-image: url("images/central_park.jpg"); */
-    background-size: 1500px;/* cannot shortcut */
-    /* background-position: 0px -200px; */
-    /* background-repeat: no-repeat; */
+    background: url("images/central_park.jpg") 0px -200px no-repeat;
+    background-size: 1500px;
     height: 400px;
     padding-top: 100px;
     padding-left: 100px;
@@ -15,7 +13,6 @@ li {
     display: inline;
     padding: 0px 20px;
 }
-/* affect to only li a */
 li a:link {
     text-decoration: none;
     color: #000;
@@ -32,14 +29,12 @@ li a:active {
     text-decoration: none;
     color: #753a30;
 }
-
 nav {
     background-color: rgb(255, 245, 238);
     height: 50px;
     text-align: center;
     padding-top: 2px;
 }
-/* style the main content area */
 main {
     margin: 50px;
 }
@@ -72,12 +67,10 @@ label {
 input, textarea {
     width: 300px;
 }
-
 input[type="radio"] {
     width:25px;
 }
-
-input[type="submit"]{
+input[type="submit"] {
     display: block;
     margin: 20px 0 10px 0;
     width: 100px;
@@ -88,33 +81,27 @@ input[type="submit"]{
     border-radius: 10px;
     font-weight: bold;
 }
-
 input:focus {
     background-color: #c8eb47;
 }
-
 #album {
     display: flex;
     flex-wrap: wrap;
 }
-
 #album #photo {
     margin: 10px;
     text-align: center;
     position: relative;
 }
-
 #album #photo img {
     width: 400px;
     transition: opacity 0.5s ease;
 }
-
 .caption {
     margin-top: 5px;
     font-size: 14px;
     color: #555;
 }
-
 .description {
     display: none;
     position: absolute;
@@ -122,20 +109,51 @@ input:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.7);
-    color: rgb(0, 0, 0);
+    color: black;
     padding: 10px;
     text-align: center;
+    cursor: pointer;
 }
-
 #album #photo:hover .description {
     display: block;
 }
+
+.hidden {
+    display: none;
+}
+
 
 footer {
     height: 40px;
     background-color: rgb(129,141,179);
     text-align: center;
     padding-top: 20px;
-    color: rgb(211,218,240)
+    color: rgb(211,218,240);
 }
-
+/* Info Box Styles */
+#info-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: 1000;
+}
+#info-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#info-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#info-close {
+    font-size: 14px;
+    color: yellow;
+    cursor: pointer;
+}
